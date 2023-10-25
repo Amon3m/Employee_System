@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EmployeesSystem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Salary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UFF-Y0-F1p">
+                                <rect key="frame" x="20" y="110" width="374" height="26.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a31-3v-kQW">
+                                <rect key="frame" x="20" y="206.33333333333334" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bdR-pl-y9v">
+                                <rect key="frame" x="20" y="390.33333333333331" width="103" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Employee "/>
+                                <connections>
+                                    <action selector="employeeBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHN-KK-QrD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6f-U0-Urz">
+                                <rect key="frame" x="298" y="390.33333333333331" width="96" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Manager "/>
+                                <connections>
+                                    <action selector="managerBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wXT-zx-GTx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salary" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmC-Pv-MVI">
+                                <rect key="frame" x="20" y="485.33333333333331" width="374" height="26.999999999999943"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bdR-pl-y9v" firstAttribute="top" secondItem="a31-3v-kQW" secondAttribute="bottom" constant="150" id="AgA-j1-Gtf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FmC-Pv-MVI" secondAttribute="trailing" constant="20" id="LVf-GU-enH"/>
+                            <constraint firstItem="FmC-Pv-MVI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pxj-yb-J6y"/>
+                            <constraint firstItem="UFF-Y0-F1p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Qdw-n1-cYD"/>
+                            <constraint firstItem="bdR-pl-y9v" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Qym-7w-7VS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="s6f-U0-Urz" secondAttribute="trailing" constant="20" id="UkD-gH-uoA"/>
+                            <constraint firstItem="UFF-Y0-F1p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="bUF-PS-NTp"/>
+                            <constraint firstItem="a31-3v-kQW" firstAttribute="leading" secondItem="UFF-Y0-F1p" secondAttribute="leading" id="e62-I5-Tjo"/>
+                            <constraint firstItem="s6f-U0-Urz" firstAttribute="top" secondItem="a31-3v-kQW" secondAttribute="bottom" constant="150" id="fxz-wJ-dQ0"/>
+                            <constraint firstItem="a31-3v-kQW" firstAttribute="trailing" secondItem="UFF-Y0-F1p" secondAttribute="trailing" id="grY-ZY-bKQ"/>
+                            <constraint firstItem="FmC-Pv-MVI" firstAttribute="top" secondItem="bdR-pl-y9v" secondAttribute="bottom" constant="60" id="lHr-J9-uhK"/>
+                            <constraint firstItem="a31-3v-kQW" firstAttribute="top" secondItem="UFF-Y0-F1p" secondAttribute="bottom" constant="70" id="lIE-ue-jAV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UFF-Y0-F1p" secondAttribute="trailing" constant="20" id="sZG-rH-eRr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resLbl" destination="FmC-Pv-MVI" id="6RE-WY-pHY"/>
+                        <outlet property="salaryTxt" destination="a31-3v-kQW" id="Oqk-Ee-Iuk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.00000000000001" y="-27.717391304347828"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
